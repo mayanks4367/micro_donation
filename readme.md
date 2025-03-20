@@ -52,3 +52,26 @@ contract MicroDonation {
         // Fee withdrawal logic
     }
 }
+
+
+
+
+function withdrawFees(address payable _to) external onlyOwner {
+    uint256 balance = address(this).balance;
+    (bool sent, ) = _to.call{value: balance}("");
+    require(sent, "Withdrawal failed");
+}
+
+
+
+sequenceDiagram
+    Donor->>Contract: Send ETH
+    Contract->>Recipient: Forward (ETH - Fees)
+    Contract->>Contract: Track Fees
+    Owner->>Contract: Withdraw Fees
+
+function withdrawFees(address payable _to) external onlyOwner {
+    uint256 balance = address(this).balance;
+    (bool sent, ) = _to.call{value: balance}("");
+    require(sent, "Withdrawal failed");
+}
