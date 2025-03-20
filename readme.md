@@ -6,7 +6,7 @@
 
 A blockchain-based platform for seamless, transparent, and gas-efficient micro-donations in ETH. Perfect for charities, DAOs, and community projects!
 
-![MicroDonation Workflow](https://i.imgur.com/3XzQ7Lj.png)
+
 
 ## 📖 Table of Contents
 - [🌟 Features](#-features)
