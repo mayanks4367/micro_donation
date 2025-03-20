@@ -32,6 +32,9 @@ A blockchain-based platform for seamless, transparent, and gas-efficient micro-d
 
 ### Contract Structure
 ```solidity
+
+![WhatsApp Image 2025-03-20 at 3 57 29 PM](https://github.com/user-attachments/assets/63f33433-4a25-404c-8a4b-04a6593553d0)
+
 contract MicroDonation {
     address payable public recipient;
     address public owner;
